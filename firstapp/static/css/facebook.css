@@ -1,0 +1,17 @@
+#headdiv{
+    background-color: rgb(28, 28, 119); 
+    color: #ffffff;
+}
+#middlediv{
+    background: linear-gradient(white, lightblue);
+}
+li a{
+    color: black;
+}
+@media (max-width: 1199px) {#loginform{ 
+    background: #ffffff;
+    color: #808080;
+}
+ }
+ 
+ 

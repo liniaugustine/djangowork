@@ -8,3 +8,5 @@ def new(req):
  return HttpResponse('hai lini')
 def firstpg(request):
      return render(request, 'firstpg.html')
+def fbpage(request):
+     return render(request, 'facebookpg.html')
