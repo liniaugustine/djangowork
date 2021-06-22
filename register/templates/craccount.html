@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CreateAccount</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/todo.css' %}">
+</head>
+<body id="createacc">
+    <nav class="navbar bg-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <h3 class="text-light">To Do App</h3>
+          </li>
+        </ul>
+      </nav><br><br>
+    <h2 style="text-align: center">Create New Account</h2>
+<div class="container mt-5" style="height: 700px;">
+        <form>
+        <div class="input-group">
+        <input type="text" class="form-control" placeholder="First Name" id="fname" style="border-radius: 10px" required>
+    <input type="text" class="form-control" placeholder="Last Name" id="lname" style="border-radius: 10px" required>
+ </div>  <br>
+    <input type="text" class="form-control" placeholder="@Username" style="border-radius: 10px" required><br>
+    <div class="input-group">
+    <input type="password" class="form-control" placeholder="Password" id="pswrd" style="border-radius: 10px" required>
+    <input type="password" class="form-control" placeholder="Confirm Password" id="cpswrd" style="border-radius: 10px" required>
+    </div> <br>
+ <button type="submit" class="btn btn-primary" onclick="myform()">
+     <a style="color: white; text-decoration: none;" href="hometodo">Create Account</a></button>
+              </form>
+</div>
+<script>
+   /* function myform(){
+var pass=document.getElementById('pswrd');
+var cpass=document.getElementById('cpswrd');
+if(pass.value<6){
+    alert("Password must be atleast 6 charactor")
+}else if(cpass.value<6){
+    alert("password must be atleast 6 lettors")
+}else if(pass.value!=cpass.value){
+alert("password misatch")
+}
+}*/
+
+</script>
+</body>
+</html>
