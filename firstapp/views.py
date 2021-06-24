@@ -10,3 +10,5 @@ def firstpg(request):
      return render(request, 'firstpg.html')
 def fbpage(request):
      return render(request, 'facebookpg.html')
+def calculator(request):
+     return render(request, 'simplecal.html')

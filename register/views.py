@@ -10,4 +10,5 @@ def hometodo(request):
  return render(request,'hometodo.html')
 def craccount(request):
  return render(request,'craccount.html')
+
  

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<style>
+    input[type="button"]{
+        border-radius: 10px;
+    }
+    input[type="text"]{
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+        border-color: black;
+    }
+</style>
+</head>
+<body><center>
+  <form action="" name="myform">
+      <table border="1" cellpadding="10px" class="bg-dark">
+          <tr>
+              
+             <td colspan="2"><input type="text" name="rslt" id="ans"  disabled></td>
+          </tr>
+          <tr>
+              <td><label for="fst" class="text-light">Enter 1st number</label></td>
+              <td><input type="text" name="fst" id="fst"></td>
+          </tr>
+          <tr>
+                <td><label for="snd" class="text-light">Enter 2nd number</label></td>
+                <td><input type="text" name="snd" id="snd"></td>
+          </tr>
+          <tr>
+                <td colspan="2">
+                        <input type="button" value="+" onclick="add()" class="btn btn-primary btn-lg">
+                        <input type="button" value="-" onclick="sub()" class="btn btn-primary btn-lg">
+                        <input type="button" value="*" onclick="mult()" class="btn btn-primary btn-lg">
+                        <input type="button" value="/" onclick="div()" class="btn btn-primary btn-lg">
+                        <input type="button" value="Clear " onclick="clr()" class="btn btn-danger btn-lg">
+                </td>
+            </tr>
+      </table>
+
+
+  </form></center>
+  <script>
+  function add()
+  {
+      first=parseFloat(myform.fst.value);
+      second=parseFloat(myform.snd.value);
+      result= first+second;
+      myform.rslt.value=result;
+  }
+  function sub(){
+    first=parseFloat(myform.fst.value);
+      second=parseFloat(myform.snd.value);
+      result= first-second;
+      myform.rslt.value=result;
+  }
+  function mult(){
+    first=parseFloat(myform.fst.value);
+      second=parseFloat(myform.snd.value);
+      result= first*second;
+      myform.rslt.value=result;
+  }
+  function div(){
+    first=parseFloat(myform.fst.value);
+      second=parseFloat(myform.snd.value);
+      result= first/second;
+      myform.rslt.value=result;
+  }
+  function clr(){
+      document.getElementById('ans').value=""
+  }
+  </script>
+
+</body>
+</html>
