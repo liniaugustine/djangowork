@@ -24,7 +24,7 @@
       <table border="1" cellpadding="10px" class="bg-dark">
           <tr>
               
-             <td colspan="2"><input type="text" name="rslt" id="ans"  disabled></td>
+             <td colspan="2"><input type="text" name="rslt" id="ans" disabled></td>
           </tr>
           <tr>
               <td><label for="fst" class="text-light">Enter 1st number</label></td>
@@ -36,11 +36,11 @@
           </tr>
           <tr>
                 <td colspan="2">
-                        <input type="button" value="+" onclick="add()" class="btn btn-primary btn-lg">
+                        <input type="button" value="+" onclick="add();" class="btn btn-primary btn-lg">
                         <input type="button" value="-" onclick="sub()" class="btn btn-primary btn-lg">
                         <input type="button" value="*" onclick="mult()" class="btn btn-primary btn-lg">
                         <input type="button" value="/" onclick="div()" class="btn btn-primary btn-lg">
-                        <input type="button" value="Clear " onclick="clr()" class="btn btn-danger btn-lg">
+                        <input type="button" value="Clear All" onclick="clr()" class="btn btn-danger btn-lg">
                 </td>
             </tr>
       </table>
@@ -75,6 +75,8 @@
   }
   function clr(){
       document.getElementById('ans').value=""
+      document.getElementById('fst').value=""
+      document.getElementById('snd').value=""
   }
   </script>
 
